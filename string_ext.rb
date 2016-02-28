@@ -6,13 +6,13 @@ class StringExt
   end
 
   def concat
-   return @str1 + @str2
+    @str1 + @str2
   end
 
   def substract
-   tmp = @str1
+   tmp = @str1.dup
    tmp.slice! @str2
-   return tmp 
+   tmp
   end
 
 end
